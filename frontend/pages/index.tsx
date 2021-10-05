@@ -76,7 +76,7 @@ export default function Home() {
           <div>
            <span>診断結果：</span>
            <span>
-            {data?.updateImage?.kind == "0" ? "犬" : "猫"}
+            {data?.updateImage?.kind == "0" ? "犬顔" : "猫顔"}
           </span>
           <span>{loading_get}</span>
         </div>
