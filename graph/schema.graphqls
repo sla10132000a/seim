@@ -1,0 +1,12 @@
+# articleサービスとやり取りするArticleの型定義
+type Image {
+    kind: String!
+}
+
+input UpdateInput {
+    content: String!
+}
+
+type Mutation {
+    updateImage(input: UpdateInput!): Image!
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package ml;
+
+option go_package = ".";
+
+message UpdateInput {
+  string kind = 1;
+}
+
+message Image {
+  string content = 1;
+}
+
+// articleサービスを定義
+service ImageService {
+  rpc ReadImage(UpdateInput) returns(Image);
+}
